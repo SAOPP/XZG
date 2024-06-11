@@ -14,7 +14,7 @@
   "p": {
     "st": {
       "dic": {
-        "tt": "Device",
+        "tt": "Gateway",
         "dm": "Model",
         "et": "Temperature",
         "ef": "Processor",
@@ -26,11 +26,11 @@
         "kb": "KiB",
         "efti": "internal",
         "efte": "external",
-        "ens": "NV storage",
+        "ens": "NV Storage",
         "ent": "entries",
-        "efss": "File system",
-        "du": "Operating time",
-        "lt": "Local time"
+        "efss": "File System",
+        "du": "Online",
+        "lt": "Date & Time"
       },
       "te": "Ethernet",
       "tw": "WiFi",
@@ -50,10 +50,11 @@
         "op": "Mode",
         "opn": "Zigbee-Network",
         "opu": "Zigbee-USB",
-        "scc": "Socket",
+        "scc": "Connected",
         "sccn": "No connection",
         "sccy": "{{count}} clients",
-        "su": "Connection time",
+        "su": "Connection",
+        "tt": "Device status",
         "zfs": "Flash size",
         "zie": "IEEE"
       },
@@ -105,9 +106,9 @@
         }
       },
       "u": {
-        "h": "New firmware check time",
+        "h": "Auto check for updates at",
         "d": {
-          "tt": "Day of week",
+          "tt": "Day of the week",
           "ev": "Everyday",
           "mn": "Monday",
           "tu": "Tuesday",
@@ -117,7 +118,7 @@
           "sa": "Saturday",
           "su": "Sunday"
         },
-        "ai": "Auto install updates (ESP32 and Zigbee)"
+        "ai": "Auto install updates (Gateway and Zigbee module)"
       }
     },
     "ne": {
@@ -130,14 +131,14 @@
       "descWifi": "Wi-Fi",
       "wifi": {
         "btn": {
-          "scan": "Scan for Wi-Fi networks",
+          "scan": "Scan Wi-Fi networks",
           "man": "Enter manually"
         },
         "rssi": "RSSI",
         "ssid": "SSID",
         "sc": "Security",
         "ch": "Channel",
-        "nnf": "WiFi networks not found",
+        "nnf": "No Wi-Fi networks found",
         "mode": "Mode",
         "power": "Tx Power"
       }
@@ -159,8 +160,8 @@
         "dp": "INSERT_DEVICE_PATCH_HERE"
       },
       "fws": {
-        "tt": "Device Role",
-        "alarm": "Changing the firmware while the network is running will lead to its destruction!"
+        "tt": "Gateway Role",
+        "alarm": "WARNING: Changing the firmware while the network is running will lead to its destruction!"
       }
     },
     "mq": {
@@ -173,8 +174,8 @@
       },
       "port": {
         "n": "Port",
-        "ph": "MQTT port number",
-        "tt": "Enter the port number (usually 1883)"
+        "ph": "MQTT server port",
+        "tt": "Enter the port number (default 1883)"
       },
       "topic": {
         "n": "Topic",
@@ -248,7 +249,7 @@
       "rst": "Restart",
       "fm": "Flash Mode",
       "rr": "Router Reconnect",
-      "esp": "ESP32",
+      "esp": "Gateway",
       "fr": "Factory reset",
       "csc": "Peripherals control",
       "ms": "Mode select",
@@ -267,8 +268,8 @@
       "fb": "File Browser",
       "fn": "Filename",
       "s": "Size",
-      "egu": "ESP32",
-      "efu": "ESP32 manual flashing",
+      "egu": "Gateway",
+      "efu": "Gateway manual flashing",
       "cf": "Select firmware file...",
       "ilfg": "Install latest",
       "zu": "Zigbee update (in develop)",
@@ -336,7 +337,7 @@
     "now": "Install now",
     "mode": "Mode",
     "cst": "Status",
-    "csp": "Speed",
+    "csp": "Bandwidth",
     "mac": "MAC",
     "conn": "Connected",
     "connecting": "Connecting",
@@ -365,7 +366,7 @@
       },
       "fr": {
         "tt": "FACTORY RESET WARNING",
-        "msg": "This will erase ALL settings."
+        "msg": "This will erase ALL settings, be careful!"
       },
       "fu": {
         "tt": "XZG FIRMWARE UPDATE",
@@ -383,10 +384,10 @@
       },
       "ws": {
         "tt": "Wi-Fi network connection",
-        "msg": "Connecting to the network in progress... Wait for the result.",
-        "nip": "New IP address is {{ip}} Device will now reboot for the new settings to take effect.",
+        "msg": "Connecting to the network... Wait for the result.",
+        "nip": "New IP address: {{ip}} The gateway will reboot for the new settings to take effect.",
         "btn": "Go to",
-        "err": "Connection error, check SSID, PASSWORD and try again"
+        "err": "Connection error: Please check your SSID or PASSWORD and try again"
       },
       "mc": {
         "tt": "Select your device model",
@@ -429,7 +430,7 @@
   "ts": {
     "esp": {
       "upd": {
-        "tt": "ESP32 update available 🚀",
+        "tt": "Gateway update available 🚀",
         "msg": "New firmware ({{ver}}) was found on GitHub. It was downloaded {{count}} times."
       },
       "beta": {
